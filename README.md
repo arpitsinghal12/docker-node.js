@@ -8,21 +8,17 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 You need to have Docker up and running on your machine
-
-```
-```
+Install docker-compose to get the compose file up and running.
 
 ### Installing
 
-A step by step guide on how to install docker on ubuntu machine
+Installation guide to install docker on ubuntu machine
 ```
-sudo apt update
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-sudo apt update
-apt-cache policy docker-ce
-sudo apt install docker-ce
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+```
+Installing guide to install docker-compose on ubuntu machine
+```
+apt install docker-compose
 ```
 
 ## Running the docker scripts to up the server
