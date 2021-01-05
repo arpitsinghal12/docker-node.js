@@ -31,7 +31,7 @@ router.get('/report', function(req, res, next) {
         if (err) throw err;
         var dbo = db.db("mydb");
 	var collection = dbo.collection('metrices_server');
-	collection.find({}).toArray(function(err,docs){
+	collection.find({}).sort({percentage_cpu_used: -1, percentage_memory_used: -1}).limit(1).toArray(function(err,docs){
         if (err) throw err;
         console.log(docs);
 	res.send(docs)
